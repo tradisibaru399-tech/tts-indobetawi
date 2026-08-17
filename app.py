@@ -29,7 +29,7 @@ teks_input = st.text_area("Kolom Narasi (Tanpa Batas Karakter)", height=200, pla
 def proses_teks_dengan_gemini(teks, dialek, suasana):
     if not GENAI_API_KEY:
         return teks
-    model = genai.GenerativeModel("gemini-1.5-flash")
+    model = genai.GenerativeModel("gemini-2.5-flash")
     prompt = f"""
     Bertindaklah sebagai ahli fonetik dan dialek bahasa. 
     Ubah dan optimalkan teks berikut agar saat dibaca oleh mesin TTS, hasilnya sangat alami sesuai parameter:
